@@ -1,4 +1,4 @@
-## Study-Algorithm-baekjoon
+## Study-Algorithm-swea
 
 - This is a repository for algorithm exercises by [SW Expert Academy](https://www.acmicpc.net/step)
 - Usually using Python
