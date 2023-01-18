@@ -32,8 +32,6 @@ for test_case in range(1, T+1):
         # Get distance
         total_distance += acceleration * SECOND
 
-
-
     # Print each test cases total distance
     print(f'#{test_case} {total_distance}')
 
