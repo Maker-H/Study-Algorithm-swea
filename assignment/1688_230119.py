@@ -30,8 +30,7 @@ for student in students:
     elif student in student_num:
         student_num[student] += 1 
 
-for word in student.values():
-    # max 구해서 다른 딕셔너리에 넣고 기존 딕셔너리에서는 삭제하고 다시 max 구하기  
+answer = sorted(student_num.items(), key = lambda x: x[1])
 
-
+print(answer)
 
