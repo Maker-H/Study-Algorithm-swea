@@ -11,7 +11,7 @@ while count != (len(words)-1):
 # Professor
 for idx in range(len(words)-1):
 	if words[idx][-1] != words[idx+1][0] or words[i] in words[:idx]:
-		print(f'{i+1}번째 탈락자가 탈락하였습니다')
+		print(f'{idx+1}번째 탈락자가 탈락하였습니다')
 		break
 else:
 	print('축하합니다. 아무도 탈락하지 않으셨습니다.')
@@ -19,7 +19,7 @@ else:
 for idx in range(len(words)-1):
 	if words[idx][-1] != words[idx+1][0] or words[i] in words[:idx]:
 		flag = False
-		print(f'{i+1}번째 탈락자가 탈락하였습니다')
+		print(f'{idx+1}번째 탈락자가 탈락하였습니다')
 		break
 if flag:
 	print('축하합니다. 아무도 탈락하지 않으셨습니다.')

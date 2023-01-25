@@ -10,3 +10,16 @@ for word in words:
         answer[sorted_word].append(word)
 
 print(answer)
+
+
+#professor
+anagrams = {}
+for word in words:
+    key = ''.join(sorted(word))
+    if not anagrams.get(key):
+        anagrams[key] = [word]
+    else:
+        anagrams[key].append(word)
+
+print(anagrams)
+print(list(anagrams.values))
