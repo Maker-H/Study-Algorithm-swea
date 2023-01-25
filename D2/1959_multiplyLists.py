@@ -1,3 +1,6 @@
+# Can freely move BIG or SMALL list to make the numbers face each other.
+# It should not go beyond either end of the longer side.
+# Print maximum when multiply opposite numbers and add them all up.
 
 T = int(input())
 
@@ -23,16 +26,17 @@ for test_case in range(1, T+1):
 
         for repeat in range(len(SMALL)):
             sum += (BIG[tmp_b_idx] * SMALL[tmp_s_idx])
-            print('#',repeat, 'sum', BIG[tmp_b_idx] * SMALL[tmp_s_idx], 'big', BIG[tmp_b_idx], 'small', SMALL[tmp_s_idx],'tmp_b', tmp_b_idx, 'tmp_S', tmp_s_idx)
             tmp_b_idx += 1
             tmp_s_idx += 1
-            # TODO
-            if tmp_b_idx == len(BIG)+1 and tmp_s_idx == len(SMALL) :
+            # If end of index break
+            if tmp_b_idx == len(BIG) and tmp_s_idx == len(SMALL):
                 isContinue = False
                 break
-
-        b_idx += 1
+    
         sums.append(sum)
+        # If I reach the end and do b_idx += 1 operaition, it goes out of index range
+        if isContinue:
+            b_idx += 1
         
     print(f'#{test_case} {max(sums)}')
 
