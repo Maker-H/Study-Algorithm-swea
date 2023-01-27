@@ -18,3 +18,19 @@ def group_anagrams(user_inputs):
 
 user_inputs = ['eat','tea','tan','ate','nat','bat']
 print(group_anagrams(user_inputs))
+
+
+
+#professor
+def group_anagrams(words):
+    anagrams = {}
+    for word in words:
+        key = ''.join(sorted(word))
+        # 1
+        anagrams.setdefault(key, [])
+        anagrams[key].append(word)
+
+        # 2
+        if not anagrams.get(key):
+            anagrams[key] = []
+        anagrams[key].append(word)
