@@ -1,9 +1,6 @@
 # Receives two input times consisting of hours and minutes.h_sum
 # Print the sum of them as hours and minutes
 
-import sys
-sys.stdin = open("C:/Users/SSAFY/Downloads/input.txt", "r")
-
 T = int(input())
 
 for test_case in range(1, T+1):

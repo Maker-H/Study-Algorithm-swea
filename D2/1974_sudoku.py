@@ -1,9 +1,6 @@
 # When the numbers of a 9 X 9 Sudoku puzzle are given as input, if there are no overlapping numbers, 
 # print 1 as the correct answer, otherwise print 0.
 
-import sys
-sys.stdin = open("C:/Users/SSAFY/Downloads/input.txt", "r")
-
 def row_nodouble_true(sudoku):
     for first in range(len(sudoku)):
         row_len = len(sudoku[first])
