@@ -23,6 +23,7 @@ def hanoi(num_len, *k):
 
 
 # 예시 
+#TODO : 하노이
 hanoi(3, 'A', 'C', 'B')
 
 # A번 기둥의 1번 원반을 B번 기둥에 옮긴다.
