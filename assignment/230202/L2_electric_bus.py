@@ -14,37 +14,22 @@ def count_station(charge_run, stations):
         if stations[current_station] == 1:
             charge_cnt += 1
 
-        # 종점이면
+        # 종점이면 cnt하지 않고 검증만 한다
         elif current_station == end_point:
-
-            # 이전 이전 정류장에서 종점을 올 수 있으면 그 이전 정류장에 설 이유가 없다
-            if current_station - double_prev_charge_station <= charge_run:
-                charge_cnt -= 1
-                return charge_cnt
-            else:
-                return charge_cnt
-
-
-            # TODO : 이전 정류장에서 못오면 어떻게 해야될까
-            if current_station - prev_charge_station >= charge_run:
-                return 0
-            # 이전 정류장에서 올 수 있으면
-            else:
-
+            pass
 
         else:
             # 충전소 아니면 지나친다
             continue
 
 
-        # 바로 이전 충전했던 정류장에서 도착할 수 있는지 확인한다
-        if prev_charge_station != 0:
+
             # 도착할 수 있으면 여기 정류장에서 충전하자
-            if current_station - prev_charge_station <= charge_run:
-                pass
-            # 도착 못하면 여기서 충전해야 한다
-            else:
-                return 0
+        if current_station - prev_charge_station <= charge_run:
+            pass
+        # 도착 못하면 여기서 충전해야 한다
+        else:
+            return 0
 
         # 바로 이전 정류장에서 충전하지 않아도 이전이전 정류장에서 도착할 수 있는지 확인한다
         if prev_charge_station != 0:
@@ -64,7 +49,9 @@ def count_station(charge_run, stations):
             prev_charge_station = current_station
 
 
-
+        if current_station == end_point:
+            return  charge_cnt
+        # TODO : 이전 정류장에서 못오면 어떻게 해야될까
 
 
 
