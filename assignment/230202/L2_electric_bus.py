@@ -5,7 +5,6 @@ def count_station(charge_run, stations):
     charge_cnt = 0
     prev_charge_station = 0
     double_prev_charge_station = 0
-    triple_prev_charge_station = 0
     end_point = len(stations) - 1
 
     for current_station in range(1, len(stations)):
