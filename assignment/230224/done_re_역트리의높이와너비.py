@@ -66,7 +66,6 @@ for i in range(1, max_level + 1):
     if tmp > total_max:
         total_max = tmp
         ans_level = i
-print(max_level)
 
 print(ans_level, total_max)
 
