@@ -3,7 +3,7 @@ sys.setrecursionlimit(10 ** 5)
 def inorder(current, level):
     global cnt
 
-    if current <= N and current != -1:
+    if current <= N:
         node_level[current] = level
 
         left = tree[current][0]
@@ -24,8 +24,7 @@ def inorder(current, level):
         if right != -1:
             inorder(right, level + 1)
 
-    else:
-        return 0
+    return 
 
 N = int(sys.stdin.readline())
 
@@ -39,15 +38,16 @@ for _ in range(N):
     tree[V][0] = R
     tree[V][1] = L
 
-    is_root[R] = 1
-    is_root[L] = 1
+    if R != -1:
+        is_root[R] = 1
+    if L != -1:
+        is_root[L] = 1
 
 
 root = 0
 for i in range(len(is_root)):
     if is_root[i] == -1:
         root = i
-print(root)
 
 cnt = 1
 right_min = [N + 1] * (N + 1)
