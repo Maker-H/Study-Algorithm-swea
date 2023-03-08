@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blue;
+        }
+        div > p {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>자식 <header><p> 손자 </p></header> </p>
+        <p>자식</p>
+    </div>
+</body>
+</html>
+
+<!-- 자식 결합자는 바로 아래의 자식만을 가리키고 자손 결합자는 자신 아래에 포함되어 있는 모든 태그를 가리킨다 -->

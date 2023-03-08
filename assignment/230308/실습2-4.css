@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:1px solid black;
+    width: 802px;
+    height: 802px;
+    z-index: 1;
+}
+.inner-box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.pawn, .white-rook, .white-king, .white-queen{
+    z-index: 2500;
+    width: 100px;
+    height: 100px;
+}
+.white-queen{
+    position: relative;
+    right: 300px;
+    bottom: 300px;
+}
+.pawn{
+    display: none;
+}
+.white-rook{
+    position: relative;
+    right: 200px
+}
+.white-king{
+    z-index: 2500;
+    position: absolute;
+    left: 150px;
+}
+.box1, .box2{
+    z-index: 1;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+.box3, .box4{
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+.box1{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.box2{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.box3{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box4{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
