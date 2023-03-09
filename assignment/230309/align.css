@@ -1,0 +1,27 @@
+.container{
+    background-color: lightgreen;
+    display:flex;
+    height:300px;
+    /* flex-wrap: wrap;
+
+    align-content:flex-end; */
+}
+
+.item{
+    background-color:orangered;
+    font-size:20px;
+    border:1px solid black;
+    margin-right: 2px;
+    width:100px;
+}
+
+.order1{
+    order:2;
+}
+.order2{
+    order:3;
+}
+.order3{
+    order:1;
+}
+

@@ -1,0 +1,84 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    width: 500px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius:5px;
+    background-color: red;
+    height: 50px;
+    margin: 0;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 70px;
+    border-bottom:1px solid lightgrey;
+}
+
+.big-box{
+    border:1px solid lightgrey;
+    border-radius:5px;
+}
+
+.sign-title-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:2px solid blue;
+    height: 70px;
+}
+
+.medium-box{
+    margin: 25px 20px;
+}
+
+h4{
+    margin: 0;
+}
+.user-box{
+    margin-bottom: 20px;
+}
+
+#username, #password {
+    width: 450px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.br-label{
+    height: 10px;
+}
+
+.enter-box{
+    margin-bottom: 20px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sign-box{
+    background-color: rgb(34, 116, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 40px;
+}
+

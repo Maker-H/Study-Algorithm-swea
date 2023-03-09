@@ -1,0 +1,20 @@
+/* 부모의 n번째 자식을 선택 */
+/* 지정된 요소라면 작성한 스타일 적용 */
+#hphk > p:nth-child(2) {
+    color: blue;
+}
+
+
+/* 지정한 요소의 n번째를 선택 */
+#hphk > p:nth-of-type(2) {
+    color: red;
+}
+
+
+#hphk > p:nth-of-type(even) {
+    color: greenyellow;
+}
+
+#hphk > p:nth-of-type(2n + 1) {
+    color: palevioletred;
+}

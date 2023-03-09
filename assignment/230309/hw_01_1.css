@@ -1,0 +1,9 @@
+.box{
+    width:500px;
+    height:1000px;
+    border: 1px solid black;
+    background-image: url('black_pawn.png');
+    background-size: contain;
+    /* background-size: cover; */
+    
+}
